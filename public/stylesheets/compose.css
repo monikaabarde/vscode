@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    /* background: url(https://images.unsplash.com/photo-1604582480408-e7401f3c18bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMHdpdGglMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); */
+    /* background: url(https://images.unsplash.com/photo-1550853418-bb4348ff6a80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMHdpdGglMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); */
+    background: url(https://i.pinimg.com/564x/e3/e6/86/e3e6865960303a2cf4db914d31736811.jpg);
+    background-size:cover;
+    padding:5%;
+}
+h1{
+    text-align: center;
+    margin-bottom:30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #583f3f;;
+    font-weight: 600;
+    font-size: 40px;
+}
+form{
+    background-color: rgba(47, 47, 47, 0.466);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin:0 40px;
+    padding:100px;
+    border-radius:15px;
+    color: white;
+}
+label{
+    padding:5px 0;
+    font-size: 18px;
+    font-weight:400;
+    transition:0.3s;
+    pointer-events:none;
+    color:white;
+}
+.btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    /* background-color: aqua;  */
+}
+input[type="submit"]{
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius:20px;
+    border: none;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(255, 255, 255),rgb(180, 216, 242));
+    box-shadow: 0 2px 12px -3px rgb(36, 162, 200);
+    opacity: 0.9;
+    transition: 0.3s;   
+}
+
+input[type="submit"]:hover{
+    opacity: 1;
+    box-shadow: 0 2px 2px -3px rgb(39, 96, 145);
+}
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin:4px 5px 4px 20px ;
+    background: transparent;
+    /* font-size: 20px; */
+}
+input[type="date"]{
+    resize:none;
+    width:100%;
+    border:none;
+    /* color-scheme: #fff; */
+    filter: invert(1);
+    padding:5px 0px;
+    font-size:18px;
+    font-weight:300;
+    /* color:white; */
+    outline:none;
+    border-bottom:1px solid black;
+    background: transparent;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    /* background-color: #46BEFD; */
+}
+.inputBox{
+    position: relative;
+    margin-bottom:40px;  
+  }
+
+  .inputBox.w100{
+    width:100%;
+  }
+  .inputBox.w50{
+    width:47%;
+  }
+  .inputBox.w30{
+    width:30%;
+  }
+
+.inputBox input[type="text"],
+.inputBox textarea{
+    width:100%;
+    resize:vertical;
+    border:none;
+    padding:5px 0px;
+    font-size:18px;
+    font-weight:300;
+    color:white;
+    outline:none;
+    border-bottom:1px solid white;
+    background: transparent;
+  }
+.inputBox textarea{
+    height: 100px;
+  }
+.inputBox span{
+    position: absolute;
+    left:0;
+    padding:10px 0;
+    font-size: 16px;
+    font-weight:400;
+    transition:0.3s;
+    pointer-events:none;
+    color:white;
+  }
+ .inputBox input:focus~span,
+   .inputBox input:valid~span,
+  .inputBox textarea:focus~span,
+   .inputBox textarea:valid~span{
+    transform: translateY(-30px);
+    font-weight:500;
+    font-size:16px;
+    letter-spacing:1px; 
+    color:white;
+  }
+
+.tags{
+    font-size: 16px;
+}
+.tags .opt h4{
+    padding: 25px 0 10px 0;
+    font-weight:500;
+}
+
+@media screen and (max-width:900px){
+  form{
+    padding:60px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+  .inputBox.w50{
+    width:100%;
+  }
+  .inputBox.w30{
+    width:100%;
+  }
+}
+
+
+
+/* down the line is css for nav */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+.main1{
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  background-color: #4ca0e0;
+}
+
+nav ul {
+  list-style: none;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+nav ul li {
+  background-color:#4ca0e0;
+  }
+
+nav a {
+  display:block;
+  padding:0 40px; 
+  color:#FFF;
+  font-size:16px;
+  line-height: 60px;
+  text-decoration:none;
+}
+nav a:hover { 
+  background-color: #000000; 
+}
+
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; 
+}
+  
+nav ul li:hover> ul {
+  display:inherit;
+}
+  
+nav ul ul li {
+  width:230px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:230px;
+}
+
+  
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
